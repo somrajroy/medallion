@@ -13,3 +13,5 @@ Below are some additional resources and references for further learning: <br/>
 2. [Behind the Hype - The Medallion Architecture Doesn't Work](https://www.youtube.com/watch?v=fz4tax6nKZM&t=1s) <br/>
 3. [What is a Delta Lake](https://learn.microsoft.com/en-us/azure/databricks/delta/)<br/>
 4. [Building the Medallion Architecture with Delta Lake](https://delta.io/blog/delta-lake-medallion-architecture/)
+5. [What is a data lakehouse?](https://learn.microsoft.com/en-us/azure/databricks/lakehouse/)<br/>
+6. [Building the Lakehouse - Implementing a Data Lake Strategy with Azure Synapse](https://techcommunity.microsoft.com/t5/azure-synapse-analytics-blog/building-the-lakehouse-implementing-a-data-lake-strategy-with/ba-p/3612291)<br/>
