@@ -5,4 +5,4 @@
 
 # Appendix
 Below are some additional resources and references for further learning: <br/>
-1.[Medallion Architecture] https://dataengineering.wiki/Concepts/Medallion+Architecture#:~:text=A%20medallion%20architecture%20is%20a,it%20flows%20through%20various%20layers.)<br/>
+1.[Medallion Architecture] (https://dataengineering.wiki/Concepts/Medallion+Architecture#:~:text=A%20medallion%20architecture%20is%20a,it%20flows%20through%20various%20layers.)<br/>
