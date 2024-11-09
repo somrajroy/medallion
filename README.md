@@ -18,6 +18,11 @@ The below YouTube Video demostrates setting up the [medallion architecture stora
 * `Automate data pipelines`: Utilize tools like Azure Data Factory to [automate the scheduling and orchestration of data pipelines](https://dzone.com/articles/medallion-architecture-efficient-batch-and-stream).<br/>
 * `Data Segmentation and Categorization` : [Leverage data segmentation and categorization](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/optimize-data-costs) based on type, usage patters and importance. <br/>
 * `File Format Optimization` : [Different file formats (like Avro, Parquet, ORC) can be chosen](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/optimize-data-costs) based on I/O patterns and query requirements to optimize performance and storage efficiency. <br/>
+* `Performance vs. Cost Trade-offs` : Balance performance requirements with cost optimization strategies. Customers need to decide when to prioritize one over the other. Balancing performance requirements with cost optimization strategies is crucial in modern data & cloud architectures. Here are some points for consideration : <br/>
+    * `Prioritize Performance` : For mission-critical workloads or critical business-critical applications or high-frequency transactions, prioritize performance over cost.Use premium storage-tiers, performance-tiers or dedicated resources to ensure fast data access and processing. <br/>
+    * `Optimize Costs` : For less demanding workloads or batch processing jobs, focus on cost optimization. Consider using cheaper storage tiers or shared resources for non-real-time operations. <br/>
+    * `Cost-aware design` : Design data pipelines and architectures with cost-efficiency in mind. Choose appropriate data types, compression methods, and storage formats to minimize costs. <br/>
+    * `Consider Long-Term Impacts` : Evaluate long-term cost implications of performance choices. Balance immediate needs with future scalability and cost projections. <br/>
 # Appendix
 Below are some additional resources and references for further learning: <br/>
 1. [Medallion Architecture](https://dataengineering.wiki/Concepts/Medallion+Architecture#:~:text=A%20medallion%20architecture%20is%20a,it%20flows%20through%20various%20layers.)<br/>
