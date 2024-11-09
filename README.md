@@ -6,7 +6,7 @@ Data flows through the medallion architecture in a linear fashion, from bronze t
 [Microsoft Azure has various data storage models](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/data-store-overview?source=recommendations) and it is essential to have a high level overview of the same to implement polyglot persistence.<br/>
 ![image](https://github.com/user-attachments/assets/dfd7e8e5-edac-4321-80e3-f0de5652f666) <br/>
 # Setting up the medallion architecture storage account in Microsoft Azure
-The below YouTube Video demostrates setting up the [medallion architecture storage account ADLS Gen-2.](https://www.databricks.com/product/data-lake-on-azure) <br/><br/>
+The below YouTube Video demostrates setting up the [medallion architecture storage account ADLS Gen-2.](https://www.databricks.com/product/data-lake-on-azure) <br/>. [Details of the 3 layers can be found in this link.](https://erstudio.com/blog/understanding-the-three-layers-of-medallion-architecture/?form=MG0AV3)<br/>
 [Setting Up a ADLS Gen-2 medallion Storage account](https://www.youtube.com/watch?v=divjURi-low&t=302s)<br/>
 # Good practices for setting up cost-effective and high-performance storage in Microsoft Azure.
 * `Data Tiering and Access Tiers` : [Organize data into different access tiers (Hot, Cool, Archive) based on access frequency and performance requirements](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/storage-accounts/cost-optimization). This allows to store data in the most cost-effective tier while maintaining performance for frequently accessed data.<br/>
@@ -27,3 +27,4 @@ Below are some additional resources and references for further learning: <br/>
 9. [What is Databricks dbt](https://docs.databricks.com/en/partners/prep/dbt.html) and [dbt Installation in Microsoft Azure](https://learn.microsoft.com/en-us/azure/databricks/partners/prep/dbt)<br/>
 10. [Azure Storage Cost Optimization Strategies](https://www.lucidity.cloud/blog/azure-storage-cost-optimization)<br/>
 11. [Building a Robust Data Lakehouse with Medallion Architecture](https://dataplatforms.ca/building-a-robust-data-lakehouse-with-medallion-architecture/)<br/>
+12. [Recommendations for creating a culture of financial responsibility](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/create-culture-financial-responsibility?source=recommendations)<br/>
