@@ -17,6 +17,7 @@ The below YouTube Video demostrates setting up the [medallion architecture stora
 * `Leverage Azure Storage Reserved Capacity` : By committing to a specific amount of storage over a period ( 1 or 3 years), [customers can benefit from significant cost savings compared to pay-as-you-go rates](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-reserved-capacity). This applies to both block blobs and Azure Data Lake Storage data in standard storage accounts. <br/>
 * `Automate data pipelines`: Utilize tools like Azure Data Factory to [automate the scheduling and orchestration of data pipelines](https://dzone.com/articles/medallion-architecture-efficient-batch-and-stream).<br/>
 * `Data Segmentation and Categorization` : [Leverage data segmentation and categorization](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/optimize-data-costs) based on type, usage patters and importance. <br/>
+* `File Format Optimization` : [Different file formats (like Avro, Parquet, ORC) can be chosen](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/optimize-data-costs) based on I/O patterns and query requirements to optimize performance and storage efficiency. <br/>
 # Appendix
 Below are some additional resources and references for further learning: <br/>
 1. [Medallion Architecture](https://dataengineering.wiki/Concepts/Medallion+Architecture#:~:text=A%20medallion%20architecture%20is%20a,it%20flows%20through%20various%20layers.)<br/>
