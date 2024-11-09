@@ -9,7 +9,9 @@ Data flows through the medallion architecture in a linear fashion, from bronze t
 The below YouTube Video demostrates setting up the [medallion architecture storage account ADLS Gen-2.](https://www.databricks.com/product/data-lake-on-azure) <br/><br/>
 [Setting Up a ADLS Gen-2 medallion Storage account](https://www.youtube.com/watch?v=divjURi-low&t=302s)<br/>
 # Good practices for setting up cost-effective and high-performance storage in Microsoft Azure.
-* `Data Tiering and Access Tiers` : [Organize data into different access tiers (Hot, Cool, Archive) based on access frequency and importance](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/storage-accounts/cost-optimization). This allows to store data in the most cost-effective tier while maintaining performance for frequently accessed data
+* `Data Tiering and Access Tiers` : [Organize data into different access tiers (Hot, Cool, Archive) based on access frequency and performance requirements](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/storage-accounts/cost-optimization). This allows to store data in the most cost-effective tier while maintaining performance for frequently accessed data.<br/>
+* `Implement Data Lifecycle Management` : [Automatically transition data to less expensive tiers](https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview) based on age and access patterns.<br/>
+* 
 # Appendix
 Below are some additional resources and references for further learning: <br/>
 1. [Medallion Architecture](https://dataengineering.wiki/Concepts/Medallion+Architecture#:~:text=A%20medallion%20architecture%20is%20a,it%20flows%20through%20various%20layers.)<br/>
@@ -21,3 +23,5 @@ Below are some additional resources and references for further learning: <br/>
 7. [What Is a Lakehouse?](https://www.databricks.com/blog/2020/01/30/what-is-a-data-lakehouse.html)<br/>
 8. [Data Engineering on Microsoft Azure](https://www.youtube.com/watch?v=HPYUuBuq1Ns&list=PLuQSde7Xvu7DCRenR1otgxAplTtnzKO9e)</br>
 9. [What is Databricks dbt](https://docs.databricks.com/en/partners/prep/dbt.html) and [dbt Installation in Microsoft Azure](https://learn.microsoft.com/en-us/azure/databricks/partners/prep/dbt)<br/>
+10. [Azure Storage Cost Optimization Strategies](https://www.lucidity.cloud/blog/azure-storage-cost-optimization)<br/>
+11. [Building a Robust Data Lakehouse with Medallion Architecture](https://dataplatforms.ca/building-a-robust-data-lakehouse-with-medallion-architecture/)<br/>
