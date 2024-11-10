@@ -39,3 +39,4 @@ Below are some additional resources and references for further learning: <br/>
 11. [Building a Robust Data Lakehouse with Medallion Architecture](https://dataplatforms.ca/building-a-robust-data-lakehouse-with-medallion-architecture/)<br/>
 12. [Recommendations for creating a culture of financial responsibility](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/create-culture-financial-responsibility?source=recommendations)<br/>
 13. [5 Layers of Data Lakehouse Architecture Explained](https://www.montecarlodata.com/blog-data-lakehouse-architecture-5-layers/)<br/>
+14. [What is a datalakehouse](https://www.ibm.com/topics/data-lakehouse)<br/>
