@@ -41,3 +41,4 @@ Below are some additional resources and references for further learning: <br/>
 13. [5 Layers of Data Lakehouse Architecture Explained](https://www.montecarlodata.com/blog-data-lakehouse-architecture-5-layers/)<br/>
 14. [What is a datalakehouse](https://www.ibm.com/topics/data-lakehouse)<br/>
 15. [Introduction to the well-architected data lakehouse](https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/)<br/>
+16. [What is a Delta Lake ?](https://www.youtube.com/watch?v=W1wwDTj2NJE)<br/>
