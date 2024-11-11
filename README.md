@@ -43,3 +43,4 @@ Below are some additional resources and references for further learning: <br/>
 15. [Introduction to the well-architected data lakehouse](https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/)<br/>
 16. [What is a Delta Lake ?](https://www.youtube.com/watch?v=W1wwDTj2NJE)<br/>
 17. [What is a datalakehouse and how does it work ?](https://hudi.apache.org/blog/2024/07/11/what-is-a-data-lakehouse/)<br/>
+18. [Exercise: Implement the Medallion Architecture using Azure Databricks (Bronze, Silver and Gold layers)](https://microsoft.github.io/TechExcel-Fabric-with-Databricks-for-Data-Analytics/docs/Ex_04/Ex04_implement_medallion_architecture.html#exercise-05-implement-the-medallion-architecture-using-azure-databricks-bronze-silver-and-gold-layers)<br/>
