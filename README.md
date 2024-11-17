@@ -7,10 +7,33 @@ Data flows through the medallion architecture in a linear fashion, from bronze t
 ![image](https://github.com/user-attachments/assets/dfd7e8e5-edac-4321-80e3-f0de5652f666) <br/><br/>
 # Understanding layers in Medallion Architecture.
 Below are the standard definitions in a medallion typical architecture.<br/>
-* 'Bronze Layer` : Contains raw, unprocessed data that serves as the foundation for further data transformations.<br/>
+* 'Bronze Layer (Raw Data)` : Contains raw, unprocessed data that serves as the foundation for further data transformations.<br/>
    * Purpose : Ingest raw data from various sources with minimal/zero transformation.<br/>
    * `Performance Tier`: Standard. Data is typically accessed infrequently.<br/>
-   ^ `Storage Tier` : Cool, as data access frequency is low and the retention is primarily for compliance/audits. Implement lifecycle policies to transition older data to Archive. Store data in its native format (JSON, CSV, etc.).<br/>
+   * `Storage Tier` : Cool, as data access frequency is low and the retention is primarily for compliance/audits. Enable versioning only if regulatory requirements demand it. Implement lifecycle policies to transition older data to Archive. Store data in its native format (JSON, CSV, etc.).Apply compression where possible.<br/>
+   * `Lifecycle Management`: Implement lifecycle management policies to move data to cooler storage tiers automatically.<br/>
+   * `Data Compression`: Enable data compression to reduce storage costs.<br/>
+* 'Silver Layer(Cleansed, validated & Enriched data)` : Contains cleansed, validated, and enriched data. Data in this layer undergoes transformations to correct errors and improve quality.<br/>
+  * `Performance Tier`: Standard or Premium (based on query performance needs). <br/>
+  * `Storage Tier`: Hot, as this data is accessed for regular processing and analytics. Partition data based on query patterns (e.g., by date or category).Use Parquet format for optimized storage and analytics.<br/>
+  * `Cost Optimization` : Optimize read performance to reduce compute costs.Avoid keeping intermediate datasets longer than necessary by implementing cleanup jobs.<br/>
+  * `Resource Scheduling`: Schedule data transformation jobs during off-peak hours to reduce compute costs.<br/>
+  * `Optimize Compute Resources`: Use Azure Spot VMs for non-critical workloads to save costs.<br/>
+* `Gold Layer (Curated/Business-Level Data)`: Refined data for analysis and reporting.<br/>
+  * `Purpose`: Provide refined data for reporting and analytics. <br/>
+  * `Performance Tier`: Premium (for low-latency and high-throughput requirements).Else standard would suffice.<br/>
+  * `Storage Tier`: Hot, as this data is frequently queried.<br/>
+  * `Best Practices`: Store data in analytics-ready formats (Parquet, Delta). Leverage snapshots/versioning for point-in-time recovery.Retain only the most relevant datasets in Hot tier and move older versions to Cool/Archive tiers.Ensure proper indexing to minimize query runtime costs. <br/>
+  * `Reserved Instances`: Purchase reserved instances for Synapse Analytics to get discounts. Use Databricks Reserved Capacity to reduce compute costs for Gold Layer workloads if customer have consistent usage. <br/>
+  * `Compute Time` : Schedule ADF pipelines efficiently to avoid idle compute times. <br/>
+  * `Query Optimization`: Optimize queries to reduce compute resource usage.<br/>
+* `Staging Layer`: Temporary holding area for data before processing & in transit.<br/>
+  * `Performance Tier`: Standard. <br/>
+  * `Storage Tier`: Hot, as it supports ongoing data processing. <br/>
+  * `Cost Optimization` : Implement auto-delete policies to remove temporary data after a set period. Use Hot tier only when processing is active and transition to Cool after completion. <br/>
+  * `Optimize Compute Resources`: Use Azure Spot VMs for non-critical workloads to save costs.<br/>
+* `Archive Layer`: Long-term storage for historical data .<br/>
+
 # Setting up the medallion architecture storage account in Microsoft Azure
 The below YouTube Video demostrates setting up the [medallion architecture storage account ADLS Gen-2.](https://www.databricks.com/product/data-lake-on-azure). <br/>Details of the [3 layers of Medallion archcitecture can be found in this link.](https://erstudio.com/blog/understanding-the-three-layers-of-medallion-architecture/?form=MG0AV3)<br/><br/>
 [Setting Up a ADLS Gen-2 medallion Storage account](https://www.youtube.com/watch?v=divjURi-low&t=302s)<br/>
