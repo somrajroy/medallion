@@ -5,6 +5,12 @@ The Medallion architecture is a "tier"-based architecture that consists of three
 Data flows through the medallion architecture in a linear fashion, from bronze to silver to gold. At each layer, the data is processed and transformed to improve its quality and usability. The bronze layer is the simplest layer in the medallion architecture. It is simply a storage layer for raw data. The data in the bronze layer is typically stored in a data lake, such as Azure ADLS Gen-2 or Amazon S3. <br/>
 [Microsoft Azure has various data storage models](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/data-store-overview?source=recommendations) and it is essential to have a high level overview of the same to implement polyglot persistence.<br/>
 ![image](https://github.com/user-attachments/assets/dfd7e8e5-edac-4321-80e3-f0de5652f666) <br/><br/>
+# Understanding layers in Medallion Architecture.
+Below are the standard definitions in a medallion typical architecture.<br/>
+* 'Bronze Layer` : Contains raw, unprocessed data that serves as the foundation for further data transformations.<br/>
+   * Purpose : Ingest raw data from various sources with minimal/zero transformation.<br/>
+   * `Performance Tier`: Standard. Data is typically accessed infrequently.<br/>
+   ^ `Storage Tier` : Cool, as data access frequency is low and the retention is primarily for compliance/audits. Implement lifecycle policies to transition older data to Archive. Store data in its native format (JSON, CSV, etc.).<br/>
 # Setting up the medallion architecture storage account in Microsoft Azure
 The below YouTube Video demostrates setting up the [medallion architecture storage account ADLS Gen-2.](https://www.databricks.com/product/data-lake-on-azure). <br/>Details of the [3 layers of Medallion archcitecture can be found in this link.](https://erstudio.com/blog/understanding-the-three-layers-of-medallion-architecture/?form=MG0AV3)<br/><br/>
 [Setting Up a ADLS Gen-2 medallion Storage account](https://www.youtube.com/watch?v=divjURi-low&t=302s)<br/>
