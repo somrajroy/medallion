@@ -36,7 +36,7 @@ Below are the standard definitions in a medallion typical architecture.<br/>
   * `Optimize Compute Resources`: Use Azure Spot VMs for non-critical workloads to save costs.<br/>
 * `Archive Layer`: Long-term storage for historical data .<br/>
 
-# Setting up the medallion architecture storage account in Microsoft Azure
+# Setting up the medallion architecture medallion storage accounts in Microsoft Azure
 The below YouTube Video demostrates setting up the [medallion architecture storage account ADLS Gen-2.](https://www.databricks.com/product/data-lake-on-azure). <br/>Details of the [3 layers of Medallion archcitecture can be found in this link.](https://erstudio.com/blog/understanding-the-three-layers-of-medallion-architecture/?form=MG0AV3)<br/><br/>
 [Setting Up a ADLS Gen-2 medallion Storage account](https://www.youtube.com/watch?v=divjURi-low&t=302s)<br/>
 # Good practices for setting up cost-effective and high-performance storage in Microsoft Azure.
