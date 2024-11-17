@@ -7,13 +7,13 @@ Data flows through the medallion architecture in a linear fashion, from bronze t
 ![image](https://github.com/user-attachments/assets/dfd7e8e5-edac-4321-80e3-f0de5652f666) <br/><br/>
 # Understanding layers in Medallion Architecture.
 Below are the standard definitions in a medallion typical architecture.<br/>
-* 'Bronze Layer (Raw Data)` : Contains raw, unprocessed data that serves as the foundation for further data transformations.<br/>
+* `Bronze Layer (Raw Data)` : Contains raw, unprocessed data that serves as the foundation for further data transformations.<br/>
    * Purpose : Ingest raw data from various sources with minimal/zero transformation.<br/>
    * `Performance Tier`: Standard. Data is typically accessed infrequently.<br/>
    * `Storage Tier` : Cool, as data access frequency is low and the retention is primarily for compliance/audits. Enable versioning only if regulatory requirements demand it. Implement lifecycle policies to transition older data to Archive. Store data in its native format (JSON, CSV, etc.).Apply compression where possible.<br/>
    * `Lifecycle Management`: Implement lifecycle management policies to move data to cooler storage tiers automatically.<br/>
    * `Data Compression`: Enable data compression to reduce storage costs.<br/>
-* 'Silver Layer(Cleansed, validated & Enriched data)` : Contains cleansed, validated, and enriched data. Data in this layer undergoes transformations to correct errors and improve quality.<br/>
+* `Silver Layer(Cleansed, validated & Enriched data)` : Contains cleansed, validated, and enriched data. Data in this layer undergoes transformations to correct errors and improve quality.<br/>
   * `Performance Tier`: Standard or Premium (based on query performance needs). <br/>
   * `Storage Tier`: Hot, as this data is accessed for regular processing and analytics. Partition data based on query patterns (e.g., by date or category).Use Parquet format for optimized storage and analytics.<br/>
   * `Cost Optimization` : Optimize read performance to reduce compute costs.Avoid keeping intermediate datasets longer than necessary by implementing cleanup jobs.<br/>
