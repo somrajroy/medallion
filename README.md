@@ -50,7 +50,8 @@ Below are the standard definitions in a medallion typical architecture.<br/>
   * Storage Tier: Primarily Hot, as access patterns are frequent/unpredictable. <br/>
   * `Cost Optimization` : Restrict sandbox size and enforce quotas using Azure Storage Policies.Archive unused experiments after X days automatically.Use tagging for cost attribution and ensure unused resources are cleaned up. <br/>
   Below is the typical recommended Configurations summary table. By following this and the guidelines in this blog, you can implement a cost-effective and high-performing medallion architecture in ADLS Gen2 for your customers. <br/>
-![image](https://github.com/user-attachments/assets/955aceb4-e509-4553-b150-9e25a51e581d)
+![image](https://github.com/user-attachments/assets/6fe072d3-b7f9-4d8e-83c5-3d26f551bc85) <br/>
+
 
 # Setting up the medallion architecture medallion storage accounts in Microsoft Azure
 The below YouTube Video demostrates setting up the [medallion architecture storage account ADLS Gen-2.](https://www.databricks.com/product/data-lake-on-azure). <br/>Details of the [3 layers of Medallion archcitecture can be found in this link.](https://erstudio.com/blog/understanding-the-three-layers-of-medallion-architecture/?form=MG0AV3)<br/><br/>
