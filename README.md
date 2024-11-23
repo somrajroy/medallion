@@ -49,7 +49,9 @@ Below are the standard definitions in a medallion typical architecture.<br/>
   * Performance Tier: Standard, unless real-time analysis is required. <br/>
   * Storage Tier: Primarily Hot, as access patterns are frequent/unpredictable. <br/>
   * `Cost Optimization` : Restrict sandbox size and enforce quotas using Azure Storage Policies.Archive unused experiments after X days automatically.Use tagging for cost attribution and ensure unused resources are cleaned up. <br/>
-  
+  Below is the typical recommended Configurations summary table. By following this and the guidelines in this blog, you can implement a cost-effective and high-performing medallion architecture in ADLS Gen2 for your customers/ <br/>
+![image](https://github.com/user-attachments/assets/2d343ccf-91fc-4661-8a38-29ce17218901)
+
 
 # Setting up the medallion architecture medallion storage accounts in Microsoft Azure
 The below YouTube Video demostrates setting up the [medallion architecture storage account ADLS Gen-2.](https://www.databricks.com/product/data-lake-on-azure). <br/>Details of the [3 layers of Medallion archcitecture can be found in this link.](https://erstudio.com/blog/understanding-the-three-layers-of-medallion-architecture/?form=MG0AV3)<br/><br/>
@@ -58,14 +60,18 @@ The below YouTube Video demostrates setting up the [medallion architecture stora
 * [Recommendations for optimizing data costs.](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/optimize-data-costs)<br/>
 * [Medallion Architecture in Synapse & strategies](https://learn.microsoft.com/en-us/answers/questions/2034379/medallion-architecture)<br/>
 * `Data Tiering and Access Tiers` : [Organize data into different access tiers (Hot, Cool, Archive) based on access frequency and performance requirements](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/storage-accounts/cost-optimization). This allows to store data in the most cost-effective tier while maintaining performance for frequently accessed data.<br/>
-* `Implement Data Lifecycle Management` : [Implement policies to automatically tier data between tiers based on age and access patterns.](https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview) based on age and access patterns.Use Azure Lifecycle Management policies to automate data movement.<br/>
+* `Implement Data Lifecycle Management` : [Implement policies to automatically tier data between tiers based on age and access patterns.](https://learn.microsoft.com/en-us/azure/storage/blobs/lifecycle-management-overview) based on age and access patterns. The transition between tiers (Hot → Cool → Archive) should be automatic based on access patterns. Retire unused datasets using rules in Lifecycle Management.<br/>
 * `Evaluate premium performance tiers within ADLS Gen2` :Ensure the [use of premium tiers is justified by performance needs](https://learn.microsoft.com/en-us/azure/virtual-machines/premium-storage-performance), as they come with higher costs compared to the standard tier. [Mission-critial worklods](https://learn.microsoft.com/en-us/azure/well-architected/mission-critical/) typically would need premium tier. However some business-critical workloads needs KPI's of mission-critical systems. Use Standard tier for most other workloads to reduce costs. Use Premium tier only for high-performance workloads that require low latency and high throughput.<br/>
 * `Leverage Azure Storage Reserved Capacity` : By committing to a specific amount of storage over a period ( 1 or 3 years), [customers can benefit from significant cost savings compared to pay-as-you-go rates](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blob-reserved-capacity). <br/>
 * `Automate data pipelines`: Utilize tools like Azure Data Factory to [automate the scheduling and orchestration of data pipelines](https://dzone.com/articles/medallion-architecture-efficient-batch-and-stream).<br/>
 * `Data Segmentation and Categorization` : [Leverage data segmentation and categorization](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/optimize-data-costs) based on type, usage patters and importance. <br/>
+* `Tagging and Governance` : Apply Azure Resource Tags to track costs by layer, team, or purpose. <br/>
+* `Azure Cost Management Tools` : Leverage Azure Cost Management and Billing to analyze cost drivers across layers. <br/>
 * `File Format Optimization` : [Different file formats (like Avro, Parquet, ORC) can be chosen](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/optimize-data-costs) based on I/O patterns and query requirements to optimize performance and storage efficiency. <br/>
 * `Data Compression` : Leverage data compression to reduce storage costs and improve data transfer efficiency. Formats like Parquet and ORC provide built-in compression that maintains query performance while reducing space.<br/>
 * `Networking` : Leverage private endpoints to avoid unnecessary data egress costs. <br/>
+* `Optimize Redundancy` : Use Locally Redundant Storage (LRS) for non-critical data to save costs, and Geo-Redundant Storage (GRS) only for critical data. <br/>
+* `Monitoring and Alerts` : Use Azure Monitor to track storage usage and set alerts for abnormal activity. <br/>
 * `Efficient Data Ingestion and Processing` : Optimize data pipelines to minimize processing time and resource usage. Use serverless compute options like Azure Databricks or Azure Synapse Analytics. <br/>
 * `Performance vs. Cost Trade-offs` : Balance performance requirements with cost optimization strategies. Customers need to decide when to prioritize one over the other. Balancing performance requirements with cost optimization strategies is crucial in modern data & cloud architectures. Here are some points for consideration : <br/>
     * `Prioritize Performance` : For mission-critical workloads or critical business-critical applications or high-frequency transactions, prioritize performance over cost.Use premium storage-tiers, performance-tiers or dedicated resources to ensure fast data access and processing. <br/>
