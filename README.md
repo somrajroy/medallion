@@ -8,7 +8,7 @@ Data flows through the medallion architecture in a linear fashion, from bronze t
 [Microsoft Azure has various data storage models](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/data-store-overview?source=recommendations) and it is essential to have a high level overview of the same to implement polyglot persistence.<br/>
 ![image](https://github.com/user-attachments/assets/dfd7e8e5-edac-4321-80e3-f0de5652f666) <br/><br/>
 # Understanding layers in Medallion Architecture.
-Below are the standard definitions in a medallion typical architecture.<br/>
+Below are the standard definitions in a medallion architecture although elsewhere in this blog I primarily focus on Bronze, Silver and Gold layer only.<br/>
 * `Bronze Layer (Raw Data)` : Contains raw, unprocessed data that serves as the foundation for further data transformations.<br/>
    * Purpose : Ingest raw data from various sources with minimal/zero transformation.<br/>
    * `Performance Tier`: Standard. Data is typically accessed infrequently.<br/>
