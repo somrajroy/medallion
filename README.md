@@ -16,25 +16,40 @@ Below are the standard definitions in a medallion typical architecture.<br/>
    * `Lifecycle Management`: Implement lifecycle management policies to move data to cooler storage tiers automatically.<br/>
    * `Data Compression`: Enable data compression to reduce storage costs.<br/>
 * `Silver Layer(Cleansed, validated & Enriched data)` : Contains cleansed, validated, and enriched data. Data in this layer undergoes transformations to correct errors and improve quality.<br/>
-  * `Performance Tier`: Standard or Premium (based on query performance needs). <br/>
-  * `Storage Tier`: Hot, as this data is accessed for regular processing and analytics. Partition data based on query patterns (e.g., by date or category).Use Parquet format for optimized storage and analytics.<br/>
+  * `Performance Tier`: Standard unless pipelines require high IOPS <br/>
+  * `Storage Tier`: Hot, as this data is accessed for regular processing and analytics (Hot for frequently accessed data and Cool for less frequently accessed data). Partition data based on query patterns (e.g., by date or category).Use Parquet format for optimized storage and analytics.<br/>
   * `Cost Optimization` : Optimize read performance to reduce compute costs.Avoid keeping intermediate datasets longer than necessary by implementing cleanup jobs.<br/>
+  *  Leverage Azure Data Factory (ADF) or Databricks with Delta Lake for efficient processing, reducing unnecessary reads. <br/>
   * `Resource Scheduling`: Schedule data transformation jobs during off-peak hours to reduce compute costs.<br/>
+  * Avoid duplication of datasets by establishing clear data lineage. <br/>
   * `Optimize Compute Resources`: Use Azure Spot VMs for non-critical workloads to save costs.<br/>
 * `Gold Layer (Curated/Business-Level Data)`: Refined data for analysis and reporting.<br/>
   * `Purpose`: Provide refined data for reporting and analytics. <br/>
-  * `Performance Tier`: Premium (for low-latency and high-throughput requirements).Else standard would suffice.<br/>
-  * `Storage Tier`: Hot, as this data is frequently queried.<br/>
+  * `Performance Tier`: Premium, especially for business-critical workloads requiring high throughput and low latency. Else standard can suffice.<br/>
+  * `Storage Tier`: Primarily Hot, as this data is accessed frequently for reports and dashboards.<br/>
   * `Best Practices`: Store data in analytics-ready formats (Parquet, Delta). Leverage snapshots/versioning for point-in-time recovery.Retain only the most relevant datasets in Hot tier and move older versions to Cool/Archive tiers.Ensure proper indexing to minimize query runtime costs. <br/>
   * `Reserved Instances`: Purchase reserved instances for Synapse Analytics to get discounts. Use Databricks Reserved Capacity to reduce compute costs for Gold Layer workloads if customer have consistent usage. <br/>
   * `Compute Time` : Schedule ADF pipelines efficiently to avoid idle compute times. <br/>
+  *  Archive historical data periodically into Cool or Archive tiers. <br/>
+  *  Maintain a clear SLA for data freshness and retention policies to avoid over-provisioning.<br/>
   * `Query Optimization`: Optimize queries to reduce compute resource usage.<br/>
-* `Staging Layer`: Temporary holding area for data before processing & in transit.<br/>
+* `Staging Layer`: Temporary storage for intermediate processing.<br/>
   * `Performance Tier`: Standard. <br/>
-  * `Storage Tier`: Hot, as it supports ongoing data processing. <br/>
+  * `Storage Tier`: Hot, given frequent and short-term access. <br/>
   * `Cost Optimization` : Implement auto-delete policies to remove temporary data after a set period. Use Hot tier only when processing is active and transition to Cool after completion. <br/>
   * `Optimize Compute Resources`: Use Azure Spot VMs for non-critical workloads to save costs.<br/>
-* `Archive Layer`: Long-term storage for historical data .<br/>
+  *  Use ephemeral storage patterns for highly transient data. <br/>
+  *  `Archive Layer`: Long-term storage for historical & compliance data .<br/>
+  *  Performance Tier: Standard. <br/>
+  *  Storage Tier: Always Archive <br/>
+  *  Set up Blob Tiering Policies to move unused data from Cool or Hot tiers to Archive automatically. <br/>
+  *  Store compressed, immutable data to save space and ensure compliance. <br/>
+  *  Leverage Blob-level Tiering for granular control over lifecycle transitions. <br/>
+* `Sandbox/Experimentation Layer` : Stores isolated data for data scientists and analysts to experiment with. <br/>
+  * Performance Tier: Standard, unless real-time analysis is required. <br/>
+  * Storage Tier: Primarily Hot, as access patterns are frequent/unpredictable. <br/>
+  * `Cost Optimization` : Restrict sandbox size and enforce quotas using Azure Storage Policies.Archive unused experiments after X days automatically.Use tagging for cost attribution and ensure unused resources are cleaned up. <br/>
+  
 
 # Setting up the medallion architecture medallion storage accounts in Microsoft Azure
 The below YouTube Video demostrates setting up the [medallion architecture storage account ADLS Gen-2.](https://www.databricks.com/product/data-lake-on-azure). <br/>Details of the [3 layers of Medallion archcitecture can be found in this link.](https://erstudio.com/blog/understanding-the-three-layers-of-medallion-architecture/?form=MG0AV3)<br/><br/>
