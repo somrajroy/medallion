@@ -55,12 +55,14 @@ Below are the standard definitions in a medallion architecture although elsewher
 ![image](https://github.com/user-attachments/assets/6fe072d3-b7f9-4d8e-83c5-3d26f551bc85) <br/>
 
 
-# Setting up the medallion architecture medallion storage accounts in Microsoft Azure
-The below YouTube Video demostrates setting up the [medallion architecture storage account ADLS Gen-2.](https://www.databricks.com/product/data-lake-on-azure). <br/>Details of the [3 layers of Medallion archcitecture can be found in this link.](https://erstudio.com/blog/understanding-the-three-layers-of-medallion-architecture/?form=MG0AV3)<br/><br/>
+# Setting up the medallion architecture medallion storage accounts
+The below YouTube Video demostrates setting up the [medallion architecture storage account ADLS Gen-2.](https://www.databricks.com/product/data-lake-on-azure). <br/>Details of the [3 layers of Medallion archcitecture can be found in this link.](https://erstudio.com/blog/understanding-the-three-layers-of-medallion-architecture/?form=MG0AV3). The other videos demostrates the creation of simialr architecture on AWS.<br/><br/>
 [Setting Up a ADLS Gen-2 medallion Storage account](https://www.youtube.com/watch?v=divjURi-low&t=302s)<br/>
 [Creating a Lakehouse on AWS](https://www.youtube.com/watch?v=vhCPgG2lz-0)<br/>
 [Back to Basics: Building an Efficient Data Lake](https://www.youtube.com/watch?v=6l8HqX-P_9o)<br/>
 [Build a Lake House Architecture on AWS](https://aws.amazon.com/blogs/big-data/build-a-lake-house-architecture-on-aws/)<br/>
+[Building Data Lakes on AWS: Build a simple Data Lake on AWS with AWS Glue, Amazon Athena, and S3](https://www.youtube.com/watch?v=LAovcGquDc4)<br/>
+[Databricks on AWS](https://www.youtube.com/playlist?list=PLyNLocnAra9YPKdboZect6CnT6RC4PrQa)<br/>
 # Good practices for setting up cost-effective and high-performance storage in Microsoft Azure.
 * [Recommendations for optimizing data costs.](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/optimize-data-costs)<br/>
 * [Medallion Architecture in Synapse & strategies](https://learn.microsoft.com/en-us/answers/questions/2034379/medallion-architecture)<br/>
