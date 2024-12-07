@@ -47,10 +47,11 @@ Below are the standard definitions in a medallion architecture although elsewher
   *  Set up Blob Tiering Policies to move unused data from Cool or Hot tiers to Archive automatically. <br/>
   *  Store compressed, immutable data to save space and ensure compliance. <br/>
   *  Leverage Blob-level Tiering for granular control over lifecycle transitions. <br/>
+  *  Lifecycle Management: Use lifecycle management policies to automate data tiering. <br/>
 * `Sandbox/Experimentation Layer` : Stores isolated data for data scientists and analysts to experiment with. <br/>
   * Performance Tier: Standard, unless real-time analysis is required. <br/>
   * Storage Tier: Primarily Hot, as access patterns are frequent/unpredictable. <br/>
-  * `Cost Optimization` : Restrict sandbox size and enforce quotas using Azure Storage Policies.Archive unused experiments after X days automatically.Use tagging for cost attribution and ensure unused resources are cleaned up. <br/>
+  * `Cost Optimization` : Restrict sandbox size and enforce quotas using Azure Storage Policies. Archive unused experiments after X days automatically.Use tagging for cost attribution and ensure unused resources are cleaned up. Use Azure Spot VMs for non-critical testing workloads. <br/>
   Below is the typical recommended Configurations summary table. By following this and the guidelines in this blog, you can implement a cost-effective and high-performing medallion architecture in ADLS Gen2 for your customers. <br/>
 ![image](https://github.com/user-attachments/assets/6fe072d3-b7f9-4d8e-83c5-3d26f551bc85) <br/>
 
