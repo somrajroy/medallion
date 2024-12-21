@@ -100,21 +100,17 @@ The below YouTube Video demostrates setting up the [medallion architecture stora
 [CDC is a technique used to identify and capture changes](https://www.informatica.com/resources/articles/what-is-change-data-capture.html) made to data in a database(data source) and then deliver those changes to a downstream process or system in real-time or near real-time. [Delta Transfers](https://dbconvert.com/blog/change-data-capture-cdc-what-it-is-and-how-it-works/) in the Medallion architecture leverage CDC to transfer only the changes (deltas) rather than the entire dataset. This incremental approach minimizes the amount of data transferred, leading to significant cost savings and improved performance.
 # Appendix
 Below are some additional resources and references for further learning: <br/>
-1. [Medallion Architecture](https://dataengineering.wiki/Concepts/Medallion+Architecture#:~:text=A%20medallion%20architecture%20is%20a,it%20flows%20through%20various%20layers.)<br/>
-2. [Behind the Hype - The Medallion Architecture Doesn't Work](https://www.youtube.com/watch?v=fz4tax6nKZM&t=1s) <br/>
-3. [What is a Delta Lake](https://learn.microsoft.com/en-us/azure/databricks/delta/)<br/>
-4. [Building the Medallion Architecture with Delta Lake](https://delta.io/blog/delta-lake-medallion-architecture/)
-5. [What is a data lakehouse?](https://learn.microsoft.com/en-us/azure/databricks/lakehouse/)<br/>
-6. [Building the Lakehouse - Implementing a Data Lake Strategy with Azure Synapse](https://techcommunity.microsoft.com/t5/azure-synapse-analytics-blog/building-the-lakehouse-implementing-a-data-lake-strategy-with/ba-p/3612291)<br/>
-7. [What Is a Lakehouse?](https://www.databricks.com/blog/2020/01/30/what-is-a-data-lakehouse.html)<br/>
-8. [Data Engineering on Microsoft Azure](https://www.youtube.com/watch?v=HPYUuBuq1Ns&list=PLuQSde7Xvu7DCRenR1otgxAplTtnzKO9e)</br>
-9. [What is Databricks dbt](https://docs.databricks.com/en/partners/prep/dbt.html) and [dbt Installation in Microsoft Azure](https://learn.microsoft.com/en-us/azure/databricks/partners/prep/dbt)<br/>
-10. [Azure Storage Cost Optimization Strategies](https://www.lucidity.cloud/blog/azure-storage-cost-optimization)<br/>
-11. [Building a Robust Data Lakehouse with Medallion Architecture](https://dataplatforms.ca/building-a-robust-data-lakehouse-with-medallion-architecture/)<br/>
-12. [Recommendations for creating a culture of financial responsibility](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/create-culture-financial-responsibility?source=recommendations)<br/>
-14. [Medallion Architecture 101—Inside Bronze, Silver & Gold Layers](https://www.chaosgenius.io/blog/medallion-architecture/#1-more-storage-required)<br/>
-14. [What is a datalakehouse](https://www.ibm.com/topics/data-lakehouse)<br/>
-15. [Introduction to the well-architected data lakehouse](https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/)<br/>
-16. [What is a Delta Lake ?](https://www.youtube.com/watch?v=W1wwDTj2NJE)<br/>
-17. [What is a datalakehouse and how does it work ?](https://hudi.apache.org/blog/2024/07/11/what-is-a-data-lakehouse/)<br/>
-18. [Exercise: Implement the Medallion Architecture using Azure Databricks (Bronze, Silver and Gold layers)](https://microsoft.github.io/TechExcel-Fabric-with-Databricks-for-Data-Analytics/docs/Ex_04/Ex04_implement_medallion_architecture.html#exercise-05-implement-the-medallion-architecture-using-azure-databricks-bronze-silver-and-gold-layers)<br/>
+* [Medallion Architecture](https://dataengineering.wiki/Concepts/Medallion+Architecture#:~:text=A%20medallion%20architecture%20is%20a,it%20flows%20through%20various%20layers.)<br/>
+* [Building the Medallion Architecture with Delta Lake](https://delta.io/blog/delta-lake-medallion-architecture/) <br/>
+* [Building the Lakehouse - Implementing a Data Lake Strategy with Azure Synapse](https://techcommunity.microsoft.com/t5/azure-synapse-analytics-blog/building-the-lakehouse-implementing-a-data-lake-strategy-with/ba-p/3612291)<br/>
+*  [Data Engineering on Microsoft Azure](https://www.youtube.com/watch?v=HPYUuBuq1Ns&list=PLuQSde7Xvu7DCRenR1otgxAplTtnzKO9e)</br>
+*  [What is Databricks dbt](https://docs.databricks.com/en/partners/prep/dbt.html) and [dbt Installation in Microsoft Azure](https://learn.microsoft.com/en-us/azure/databricks/partners/prep/dbt)<br/>
+*  [Azure Storage Cost Optimization Strategies](https://www.lucidity.cloud/blog/azure-storage-cost-optimization)<br/>
+*  [Building a Robust Data Lakehouse with Medallion Architecture](https://dataplatforms.ca/building-a-robust-data-lakehouse-with-medallion-architecture/)<br/>
+*  [Recommendations for creating a culture of financial responsibility](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/create-culture-financial-responsibility?source=recommendations)<br/>
+* [Medallion Architecture 101—Inside Bronze, Silver & Gold Layers](https://www.chaosgenius.io/blog/medallion-architecture/#1-more-storage-required)<br/>
+* [What is a datalakehouse](https://www.ibm.com/topics/data-lakehouse)<br/>
+* [Introduction to the well-architected data lakehouse](https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/)<br/>
+* [What is a Delta Lake ?](https://www.youtube.com/watch?v=W1wwDTj2NJE)<br/>
+* [What is a datalakehouse and how does it work ?](https://hudi.apache.org/blog/2024/07/11/what-is-a-data-lakehouse/)<br/>
+* [Exercise: Implement the Medallion Architecture using Azure Databricks (Bronze, Silver and Gold layers)](https://microsoft.github.io/TechExcel-Fabric-with-Databricks-for-Data-Analytics/docs/Ex_04/Ex04_implement_medallion_architecture.html#exercise-05-implement-the-medallion-architecture-using-azure-databricks-bronze-silver-and-gold-layers)<br/>
