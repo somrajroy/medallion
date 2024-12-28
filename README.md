@@ -6,7 +6,7 @@
 The blog aims to simplify the adoption and implementation of the Medallion Architecture for modern data management, enabling development and cloud infrastructure teams to design & implement a structured, cost-effective, and high-performing data lakehouse systems by aligning on design topics.<br/>
   * `Actionable Insights`: Provides best practices for cost management, performance tuning, and lifecycle policies, reducing trial-and-error in decision-making.<br/>
   * `Optimizing resource utilization`: By defining clear storage tiers and performance requirements for each layer, the blog guides teams towards cost-effective resource allocation and data lifecycle management.<br/>
-  * `Flexible Framework`: Highlights adaptability for diverse business needs, enabling teams to tailor the architecture confidently without reinventing the wheel.<br/>
+  * `Flexible Framework`: Highlights adaptability for diverse business needs, enabling teams to tailor the architecture without reinventing the wheel.<br/>
   * `Align on Design Principles`: Avoid misunderstandings. By breaking down each layer's role and purpose, the blog eliminates ambiguity, allowing teams to focus on implementation. <br/>
 # What is a Medallion Architecture
 A Medallion architecture, coined by Databricks, is a data design pattern used to logically organize data in a lakehouse, with the goal of incrementally and progressively improving the structure and quality of data as it flows through each layer of the architecture. The layers are typically referred to as Bronze, Silver, and Gold.This architecture consists of three distinct layers – bronze (raw), silver (validated) and gold (enriched) – each representing progressively higher levels of quality. <br/>
