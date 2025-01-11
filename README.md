@@ -23,6 +23,7 @@ The [data lakehouse is modern data management](https://www.databricks.com/glossa
 
  * [Guiding principles for a lakehouse](https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/guiding-principles)<br/>
  * [Introduction to the well-architected data lakehouse](https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/)<br/>
+ * [Creating a Lakehouse on AWS](https://www.youtube.com/watch?v=vhCPgG2lz-0)<br/>
 
 ![image](https://github.com/user-attachments/assets/babfc3bc-a975-45a6-b111-05abd66d5f2d) <br/>
 
