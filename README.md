@@ -4,7 +4,7 @@
 ![image](https://github.com/user-attachments/assets/b714aa71-dd1d-40d2-8cc9-c4cabae9eaaf)<br/>
 # Purpose
 The blog aims to provide a comprehensive guide on implementing Medallion architecture and simplify it's adoption for modern data management, enabling development and cloud infrastructure teams to design & implement a structured, cost-effective, and high-performing data lakehouse systems by aligning on design topics.<br/>
-  * `Data Modernization` : Will help facilitate the transformation of legacy data systems to modern architectures, enhancing data accessibility, scalability, and efficiency.<br/>
+  * `Data Modernization` : Facilitates the transformation of legacy data systems to modern architectures, enhancing data accessibility, scalability, and efficiency. <br/>
   * `Actionable Insights`: Provides best practices for cost management, performance tuning, and lifecycle policies, reducing trial-and-error in decision-making.<br/>
   * `Optimizing resource utilization`: By defining clear storage tiers and performance requirements for each layer, the blog guides teams towards cost-effective resource allocation and data lifecycle management.<br/>
   * `Flexible Framework`: Highlights adaptability for diverse business needs, enabling teams to tailor the architecture without reinventing the wheel.<br/>
