@@ -137,7 +137,7 @@ Below are some additional resources and references for further learning: <br/>
 *  [Azure Storage Cost Optimization Strategies](https://www.lucidity.cloud/blog/azure-storage-cost-optimization)<br/>
 *  [Building a Robust Data Lakehouse with Medallion Architecture](https://dataplatforms.ca/building-a-robust-data-lakehouse-with-medallion-architecture/)<br/>
 *  [Recommendations for creating a culture of financial responsibility](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/create-culture-financial-responsibility?source=recommendations)<br/>
-* [Medallion Architecture 101—Inside Bronze, Silver & Gold Layers](https://www.chaosgenius.io/blog/medallion-architecture/#1-more-storage-required)<br/>
+* [Databricks Fundamentals: Build Your Data Skills from Scratch (Full Course)](https://www.youtube.com/watch?v=eE2iXm8isoA&t=1581s)<br/>
 * [What is a datalakehouse](https://www.ibm.com/topics/data-lakehouse)<br/>
 * [Introduction to the well-architected data lakehouse](https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/)<br/>
 * [What is a Delta Lake ?](https://www.youtube.com/watch?v=W1wwDTj2NJE)<br/>
