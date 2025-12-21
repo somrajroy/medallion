@@ -86,7 +86,12 @@ Below are the standard definitions in a medallion architecture although elsewher
   Below is the typical recommended Configurations summary table. By following this and the guidelines in this blog, you can implement a cost-effective and high-performing medallion architecture in ADLS Gen2 for your customers. <br/>
 ![image](https://github.com/user-attachments/assets/6fe072d3-b7f9-4d8e-83c5-3d26f551bc85) <br/>
 
-
+# Modernizing with Databricks Lakeflow : The Declarative Medallion
+While the Medallion Architecture defines the logic of data layers, `Databricks Lakeflow Declarative Pipelines` provide the automation engine to build them. [Lakeflow Spark Declarative Pipelines](https://learn.microsoft.com/en-us/azure/databricks/ldp/concepts) helps to operationalize the layer of Medallion Architecture reliably at scale by managing pipeline orchestration, dependencies, and incremental processing. Moving away from manual, imperative coding, Lakeflow allows architects to use a declarative approach—defining what the data should look like at each stage rather than how to move it.<br/>
+### How Lakeflow Powers the Medallion Layers
+`Bronze (Incremental Ingestion)`: Utilizing Streaming Tables and Auto Loader, Lakeflow simplifies the ingestion of raw data from cloud storage (ADLS Gen2/S3). It handles schema evolution and ensures data is ingested incrementally and cost-effectively. <br/>
+`Silver (Validated & Enriched)`: Lakeflow enables data quality enforcement by allowing engineers to define Expectations directly within declarative pipelines (for example, validating that key fields are not null). Records that do not meet defined quality rules can be dropped, quarantined, or flagged, helping maintain the Silver layer as a trusted and validated dataset for downstream consumption. <br/>
+`Gold (Business-Ready)`: By leveraging Materialized Views, the Gold layer can be kept up to date automatically. Lakeflow manages dependencies between upstream Silver tables and Gold views, ensuring that changes propagate efficiently—often incrementally—without requiring manual orchestration or full pipeline refreshes. <br/>
 # Setting up the medallion architecture medallion storage accounts
 The below YouTube Video demostrates setting up the [medallion architecture storage account ADLS Gen-2.](https://www.databricks.com/product/data-lake-on-azure). <br/>Details of the [3 layers of Medallion archcitecture can be found in this link.](https://erstudio.com/blog/understanding-the-three-layers-of-medallion-architecture/?form=MG0AV3). The other videos demostrates the creation of simialr architecture on AWS.<br/><br/>
 [Setting Up a ADLS Gen-2 medallion Storage account](https://www.youtube.com/watch?v=divjURi-low&t=302s)<br/>
