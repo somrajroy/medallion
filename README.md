@@ -127,8 +127,8 @@ Below are some additional resources and references for further learning: <br/>
 * [Medallion Architecture](https://dataengineering.wiki/Concepts/Medallion+Architecture#:~:text=A%20medallion%20architecture%20is%20a,it%20flows%20through%20various%20layers.)<br/>
 * [Building the Medallion Architecture with Delta Lake](https://delta.io/blog/delta-lake-medallion-architecture/) <br/>
 * [Building the Lakehouse - Implementing a Data Lake Strategy with Azure Synapse](https://techcommunity.microsoft.com/t5/azure-synapse-analytics-blog/building-the-lakehouse-implementing-a-data-lake-strategy-with/ba-p/3612291)<br/>
+* [Medallion Lakehouse with Databricks Lakeflow Declarative Pipelines](https://www.youtube.com/watch?v=8v150KsR5ak)<br/>
 *  [Data Engineering on Microsoft Azure](https://www.youtube.com/watch?v=HPYUuBuq1Ns&list=PLuQSde7Xvu7DCRenR1otgxAplTtnzKO9e)</br>
-*  [What is Databricks dbt](https://docs.databricks.com/en/partners/prep/dbt.html) and [dbt Installation in Microsoft Azure](https://learn.microsoft.com/en-us/azure/databricks/partners/prep/dbt)<br/>
 *  [Azure Storage Cost Optimization Strategies](https://www.lucidity.cloud/blog/azure-storage-cost-optimization)<br/>
 *  [Building a Robust Data Lakehouse with Medallion Architecture](https://dataplatforms.ca/building-a-robust-data-lakehouse-with-medallion-architecture/)<br/>
 *  [Recommendations for creating a culture of financial responsibility](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/create-culture-financial-responsibility?source=recommendations)<br/>
