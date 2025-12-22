@@ -156,3 +156,4 @@ Below are some additional resources and references for further learning: <br/>
 * [Exercise: Implement the Medallion Architecture using Azure Databricks (Bronze, Silver and Gold layers)](https://microsoft.github.io/TechExcel-Fabric-with-Databricks-for-Data-Analytics/docs/Ex_04/Ex04_implement_medallion_architecture.html#exercise-05-implement-the-medallion-architecture-using-azure-databricks-bronze-silver-and-gold-layers)<br/>
 * [Create a RAG based Chatbot with Databricks](https://www.youtube.com/watch?v=p4qpIgj5Zjg&list=PLTPXxbhUt-YVAGgN0aNCqY4Jydg324X8u&index=11&t=694s)<br/>
 * [Databricks LakeFlow: A Unified, Intelligent Solution for Data Engineering](https://www.youtube.com/watch?v=6rzQ6xjkYko)<br/>
+* [Databricks Fundamentals Masterclass](https://www.youtube.com/watch?v=oowmsG52z-Q)<br/>
