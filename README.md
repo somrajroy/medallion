@@ -99,7 +99,6 @@ While the Medallion Architecture defines the logic of data layers, `Databricks L
 ### Below are some tutorials to get started
  * [Authoring Data Pipelines With the New Lakeflow Declarative Pipelines Editor](https://www.youtube.com/watch?v=eF34sUvYdxw)<br/>
  * [Spark Declarative Pipelines (SPD) - Getting Started on Databricks Free Edition](https://www.youtube.com/watch?v=krzr52wd4nM)<br/>
- * [What is disruptive about Lakeflow Declarative Pipelines? - Data Engineering with Databricks](https://www.youtube.com/watch?v=XqS7zyRKu44)<br/>
  * [How To Create Lakeflow Declarative Pipelines | Databricks](https://www.youtube.com/watch?v=d7M3FQaxsPI)<br/>
  * [Databricks Lakeflow Declarative Pipelines](https://www.youtube.com/watch?v=YgaSzUMOWLg)<br/>
  * [LakeFlow Designer: Production-Quality ETL with No Code Required](https://www.youtube.com/watch?v=kvqsfEGnWyk)<br/>
