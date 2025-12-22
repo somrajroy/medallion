@@ -146,9 +146,7 @@ Below are some additional resources and references for further learning: <br/>
 *  [Data Engineering on Microsoft Azure](https://www.youtube.com/watch?v=HPYUuBuq1Ns&list=PLuQSde7Xvu7DCRenR1otgxAplTtnzKO9e)</br>
 *  [Azure Storage Cost Optimization Strategies](https://www.lucidity.cloud/blog/azure-storage-cost-optimization)<br/>
 *  [Building a Robust Data Lakehouse with Medallion Architecture](https://dataplatforms.ca/building-a-robust-data-lakehouse-with-medallion-architecture/)<br/>
-*  [Recommendations for creating a culture of financial responsibility](https://learn.microsoft.com/en-us/azure/well-architected/cost-optimization/create-culture-financial-responsibility?source=recommendations)<br/>
 * [Databricks Fundamentals: Build Your Data Skills from Scratch (Full Course)](https://www.youtube.com/watch?v=eE2iXm8isoA&t=1581s)<br/>
-* [What is a datalakehouse](https://www.ibm.com/topics/data-lakehouse)<br/>
 * [Introduction to the well-architected data lakehouse](https://learn.microsoft.com/en-us/azure/databricks/lakehouse-architecture/)<br/>
 * [What is a datalakehouse and how does it work ?](https://hudi.apache.org/blog/2024/07/11/what-is-a-data-lakehouse/)<br/>
 * [Exercise: Implement the Medallion Architecture using Azure Databricks (Bronze, Silver and Gold layers)](https://microsoft.github.io/TechExcel-Fabric-with-Databricks-for-Data-Analytics/docs/Ex_04/Ex04_implement_medallion_architecture.html#exercise-05-implement-the-medallion-architecture-using-azure-databricks-bronze-silver-and-gold-layers)<br/>
