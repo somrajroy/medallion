@@ -96,6 +96,7 @@ While the Medallion Architecture defines the logic of data layers, [Databricks L
  * `Simplified Orchestration`: [Lakeflow automatically constructs and manages](https://www.youtube.com/watch?v=rr0I6AMwqS0) the internal transformation DAG, eliminating manual notebook chaining and handling compute scaling and retries. External orchestrators are only needed for cross-platform workflows. <br/>
  * `Built-in Observability`: Lakeflow provides automatic lineage and visual DAGs integrated with Unity Catalog, enabling end-to-end data traceability and easier troubleshooting [as demoed in this video](https://www.youtube.com/watch?v=XiOY58yrZbQ). <br/>
  * `Unified Batch and Streaming`: [Lakeflow uses a single declarative programming model](https://www.youtube.com/watch?v=XqS7zyRKu44) for batch, streaming, and CDC pipelines, significantly reducing code and maintenance overhead.<br/>
+ * 
 ### Below are some tutorials to get started
  * [Authoring Data Pipelines With the New Lakeflow Declarative Pipelines Editor](https://www.youtube.com/watch?v=eF34sUvYdxw)<br/>
  * [Spark Declarative Pipelines (SPD) - Getting Started on Databricks Free Edition](https://www.youtube.com/watch?v=krzr52wd4nM)<br/>
