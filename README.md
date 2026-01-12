@@ -99,6 +99,7 @@ While the Medallion Architecture defines the logic of data layers, [Databricks L
  * [Databricks Lakeflow Declarative Pipelines](https://www.youtube.com/watch?v=YgaSzUMOWLg)<br/>
  * [LakeFlow Designer: Production-Quality ETL with No Code Required](https://www.youtube.com/watch?v=kvqsfEGnWyk)<br/>
  * [Simplifying streaming pipelines with Lakeflow - Data Engineering with Databricks](https://www.youtube.com/watch?v=QAsQx9EjLT4&t=14s)<br/>
+ * [Build a Medallion Architecture with Databricks Lakeflow | Data Quality, Aggregation & Orchestration](https://www.youtube.com/watch?v=yy9H4mlOG6I)<br/>
 
 # Setting up the medallion architecture medallion storage accounts
 The below YouTube Video demostrates setting up the [medallion architecture storage account ADLS Gen-2.](https://www.databricks.com/product/data-lake-on-azure). <br/>Details of the [3 layers of Medallion archcitecture can be found in this link.](https://erstudio.com/blog/understanding-the-three-layers-of-medallion-architecture/?form=MG0AV3). The other videos demostrates the creation of simialr architecture on AWS.<br/><br/>
