@@ -152,3 +152,4 @@ Below are some additional resources and references for further learning: <br/>
 * [Databricks Fundamentals Masterclass](https://www.youtube.com/watch?v=oowmsG52z-Q)<br/>
 * [CI/CD for Databricks: Advanced Asset Bundles and GitHub Actions](https://www.youtube.com/watch?v=XumUXF1e6RI)<br/>
 * [Deploying Databricks Asset Bundles via Azure DevOps Pipelines](https://www.youtube.com/watch?v=jVxip1rm3SA&t=1369s)<br/>
+* [What's Wrong with the Medallion Architecture? Guide for Medallion architecture](https://www.youtube.com/watch?v=QO9J7sZZgLM)<br/>
